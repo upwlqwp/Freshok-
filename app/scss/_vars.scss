@@ -1,0 +1,84 @@
+$assent: #63A60E;
+$default-color:  #31352b;
+$frequent:  #505050;
+
+%background{
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+%slick-next{
+    font-size: 0;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    padding: 10px;
+    margin-right: 20px;
+    right: 0;
+    top: 30%;
+    transform: rotate(180 deg);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/slider-arrow.svg);
+}
+
+%flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+%opensans-700{
+    font-family: 'OpenSans-Bold', sans-serif;
+    font-weight: 700;
+}
+
+%opensans-300{
+    font-family: 'OpenSans-Light', sans-serif;
+    font-weight: 300;
+}
+
+%opensans-400{
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%opensans-600{
+    font-family: 'OpenSans-SemiBold', sans-serif;
+    font-weight: 600;
+}
+
+%robotomedium-500{
+    font-family: 'Roboto-Medium', sans-serif;
+    font-weight: 500;
+}
+
+%robotoregular-400{
+    font-family: 'Roboto-Regular', sans-serif;
+    font-weight: 400;
+}
+
+
+%rudablack-900{
+    font-family: 'Ruda-Black', sans-serif;
+    font-weight: 900;
+}
+
+%rudabold-700{
+    font-family: 'Ruda-Bold', sans-serif;
+    font-weight: 700;
+}
+
+%rudaregular-400{
+    font-family: 'Ruda-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%rudasemibold-600{
+    font-family: 'Ruda-SemiBold', sans-serif;
+    font-weight: 600;
+}
+
+
