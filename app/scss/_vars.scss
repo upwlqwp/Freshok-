@@ -8,23 +8,6 @@ $frequent:  #505050;
 }
 
 
-%slick-next{
-    font-size: 0;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    padding: 10px;
-    margin-right: 20px;
-    right: 0;
-    top: 30%;
-    transform: rotate(180 deg);
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 6px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(../images/slider-arrow.svg);
-}
-
 %flex{
     display: flex;
     justify-content: space-between;
