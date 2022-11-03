@@ -1,7 +1,6 @@
 {
   "name": "gulp-start",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,13 +8,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/register": "^7.18.9",
     "browser-sync": "^2.27.10",
     "del": "^6.1.1",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-cheerio": "^1.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^7.1.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-replace": "^1.1.3",
     "gulp-sass": "^5.1.0",
+    "gulp-svg-sprite": "^2.0.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.6.1",
     "mixitup": "^3.3.1",
@@ -24,5 +29,14 @@
   },
   "dependencies": {
     "save-dev": "^0.0.1-security"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/upwlqwp/Freshok-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/upwlqwp/Freshok-/issues"
+  },
+  "homepage": "https://github.com/upwlqwp/Freshok-#readme",
+  "description": ""
 }

@@ -1,6 +1,18 @@
-$assent: #63A60E;
-$default-color:  #31352b;
-$frequent:  #505050;
+$green-900: #63a60f;
+$green-200: #e0edcf;
+$green-100: #eff6e7;
+$dark-900: #121212;
+$dark-800: #31352b;
+$dark-500: #505050;
+$red-900: #cf3e3b;
+$orange-900: #ff7a00;
+$yellow-900: #ffb800;
+$silver-600: #c1c1c1;
+$silver-100: #f6f6f6;
+$white: #fff;
+
+
+
 
 %background{
     background-position: center center;
@@ -13,54 +25,47 @@ $frequent:  #505050;
     justify-content: space-between;
 }
 
+
+
 %opensans-700{
-    font-family: 'OpenSans-Bold', sans-serif;
+    font-family: 'OpenSans', sans-serif;
     font-weight: 700;
 }
 
 %opensans-300{
-    font-family: 'OpenSans-Light', sans-serif;
+    font-family: 'OpenSans', sans-serif;
     font-weight: 300;
 }
 
 %opensans-400{
-    font-family: 'OpenSans-Regular', sans-serif;
+    font-family: 'OpenSans', sans-serif;
     font-weight: 400;
 }
 
 %opensans-600{
-    font-family: 'OpenSans-SemiBold', sans-serif;
+    font-family: 'OpenSans', sans-serif;
     font-weight: 600;
 }
 
-%robotomedium-500{
-    font-family: 'Roboto-Medium', sans-serif;
-    font-weight: 500;
-}
-
-%robotoregular-400{
-    font-family: 'Roboto-Regular', sans-serif;
-    font-weight: 400;
-}
 
 
 %rudablack-900{
-    font-family: 'Ruda-Black', sans-serif;
+    font-family: 'Ruda', sans-serif;
     font-weight: 900;
 }
 
 %rudabold-700{
-    font-family: 'Ruda-Bold', sans-serif;
+    font-family: 'Ruda', sans-serif;
     font-weight: 700;
 }
 
 %rudaregular-400{
-    font-family: 'Ruda-Regular', sans-serif;
+    font-family: 'Ruda', sans-serif;
     font-weight: 400;
 }
 
 %rudasemibold-600{
-    font-family: 'Ruda-SemiBold', sans-serif;
+    font-family: 'Ruda', sans-serif;
     font-weight: 600;
 }
 

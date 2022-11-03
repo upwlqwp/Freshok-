@@ -4,6 +4,9 @@ const concat = require ('gulp-concat');
 const autoprefixer = require ('gulp-autoprefixer');
 const uglify = require ('gulp-uglify');
 const imagemin = require ('gulp-imagemin');
+const svgSprite = require ('gulp-svg-sprite')
+const cheerio = require('gulp-cheerio');
+const replace = require('gulp-replace');
 const del = require ('del');
 const browserCync = require ('browser-sync').create();
 
@@ -33,7 +36,7 @@ function scripts(){
     return src ([
         'node_modules/jquery/dist/jquery.js',
         'node_modules/slick-carousel/slick/slick.js',
-        'node_modules/mixitup/mixitup.js',
+        'node_modules/mixitup/dist/mixitup.js',
         'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
@@ -59,6 +62,44 @@ function images(){
     .pipe(dest('dist/images'))
 }
 
+function svgSprites() {
+    return src('app/images/icons/*.svg') 
+      .pipe(
+        svgSprite({
+          mode: {
+            stack: {
+              sprite: '../sprite.svg', 
+            },
+          },
+        })
+      )
+          .pipe(dest('app/images')); 
+  }
+
+  function svgSprites() {
+    return src('app/images/icons/*.svg') 
+    .pipe(cheerio({
+          run: ($) => {
+              $("[fill]").removeAttr("fill"); 
+              $("[stroke]").removeAttr("stroke"); 
+              $("[style]").removeAttr("style"); 
+          },
+          parserOptions: { xmlMode: true },
+        })
+    )
+      .pipe(replace('&gt;','>')) // боремся с заменой символа 
+      .pipe(
+            svgSprite({
+              mode: {
+                stack: {
+                  sprite: '../sprite.svg', 
+                },
+              },
+            })
+          )
+      .pipe(dest('app/images')); 
+  }
+
 function build(){
     return src([
         'app/**/*.html',
@@ -77,6 +118,7 @@ function cleanDist (){
 
 function watching(){
     watch(['app/scss/**/*.scss'], styles);
+    watch(['app/images/icons/*.svg'], svgSprites);
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
     watch(['app/**/*.html']).on('change', browserCync.reload);
 }
@@ -86,7 +128,8 @@ exports.scripts = scripts;
 exports.browsercync = browsercync;
 exports.watching = watching;
 exports.images = images;
+exports.svgSprites = svgSprites;
 exports.cleanDist = cleanDist;
 exports.build = series(cleanDist, images, build) ;
 
-exports.default = parallel(styles, scripts, browsercync, watching);
+exports.default = parallel( styles, svgSprites, scripts, browsercync, watching);
