@@ -46,6 +46,7 @@
 
     svg {
       transform: translateY(5px);
+      margin-right: 12px;
       fill: $white;
       width: 32px;
       height: 22px;
@@ -69,6 +70,7 @@
 .catalog-btn {
   color: $green-900;
   font-weight: 600;
+  margin-right: 30px;
   max-width: 240px;
   width: 100%;
   min-height: 50px;
@@ -115,7 +117,7 @@
   height: 50px;
   width: 100%;
   display: flex;
-
+  margin-right: 30px;
   &__input {
     color: $dark-800;
     padding: 14px 10px 14px 40px;
@@ -157,7 +159,11 @@
 .user-nav {
   position: relative;
   display: flex;
-
+  &__item {
+    &:not(:last-child) {
+      margin-right: 17px;
+    }
+  }
   &__btn {
     @extend %background;
     border-radius: 3px;
@@ -176,7 +182,14 @@
     }
 
     &:active {
-      opacity: 0.1;
+      box-shadow: none;
+      opacity: 0, 5;
+    }
+  }
+
+  svg {
+    &:active {
+      fill: #ffffff80;
     }
   }
 
@@ -413,9 +426,8 @@
 
   &__subtitle {
     display: block;
-    padding: 10px;
     font-weight: 600;
-    margin-bottom: 9px;
+    margin: 10px 10px;
     color: $dark-500;
   }
 
@@ -464,7 +476,7 @@
     top: 17px;
   }
 
-  .icon-favorite {
+  svg {
     fill: $silver-600;
     width: 32px;
     height: 28px;
@@ -484,7 +496,7 @@
     }
   }
 
-  .icon-cart {
+  svg {
     width: 16px;
     height: 15.38px;
     fill: $white;
@@ -617,7 +629,7 @@
     margin-bottom: 18px;
     line-height: 1.8;
     text-transform: capitalize;
-    transition: opacity 0.4s;
+    transition: opacity 0.4s, border-bottom 0.3s;
 
     &:hover {
       opacity: 0.8;
@@ -658,7 +670,7 @@
     }
   }
 }
-.social-icon {
+svg {
   fill: $white;
   width: 32px;
   height: 32px;
