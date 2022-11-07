@@ -7,6 +7,8 @@ html {
       height: 100%;
   }
 
+ 
+
   *,
   *::after,
   *::before {
@@ -18,6 +20,10 @@ html {
     padding: 0;
   }
   
+  img{
+    object-fit: cover;
+  }
+
   body,
   h1,
   h2,

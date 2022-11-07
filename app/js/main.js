@@ -7,6 +7,29 @@ $(function () {
     slidesToShow: 1,
     adaptiveHeight: true,
   });
+
+  
+  $(".brands__list").slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: true,
+    autoplaySpeed: 5000,
+  });
 });
 
-var mixer = mixitup(".top-products__list");
+
+
+var containerEl1 = document.querySelector('[data-ref="container-1"]');
+var containerEl2 = document.querySelector('[data-ref="container-2"]');
+
+var config = {
+  controls: {
+    scope: 'local'
+  }
+};
+
+var mixer1 = mixitup(containerEl1, config);
+var mixer2 = mixitup(containerEl2, config);
+

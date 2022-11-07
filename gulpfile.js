@@ -87,7 +87,7 @@ function svgSprites() {
           parserOptions: { xmlMode: true },
         })
     )
-      .pipe(replace('&gt;','>')) // боремся с заменой символа 
+      .pipe(replace('&gt;','>')) 
       .pipe(
             svgSprite({
               mode: {
