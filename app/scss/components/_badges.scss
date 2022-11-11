@@ -1,0 +1,55 @@
+
+.badges {
+  display: block;
+  top: 12px;
+  left: 12px;
+  width: 100%;
+  position: absolute;
+
+  &__item {
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1;
+    padding: 3px 6px;
+    border-radius: 6px;
+    width: fit-content;
+
+    &--new {
+      background-color: $green-900;
+    }
+
+    &--sale {
+      background-color: $red-900;
+    }
+
+    &--hit {
+      background-color: $orange-900;
+    }
+  }
+}
+
+.info-badge {
+  transform: translateX(18px);
+
+  &__item {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+
+    &--available {
+      color: $green-900;
+    }
+
+    &--unavailable {
+      color: $silver-600;
+    }
+
+    &--end {
+      color: $red-900;
+    }
+  }
+}

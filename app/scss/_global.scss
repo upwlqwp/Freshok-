@@ -17,7 +17,7 @@ body {
 }
 
 .section {
-  padding-bottom: 72px;
+  padding: 72px 0;
 }
 
 .container {
@@ -68,4 +68,19 @@ body {
   font-size: 32px;
   color: $dark-900;
   margin-bottom: 30px;
+}
+
+.link-animation {
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px #eff6e7;
+    border-radius: 3px;
+  }
+
+  &:active {
+    color: $green-200;
+  }
 }
