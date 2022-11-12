@@ -96,9 +96,7 @@
   }
 
   .social {
-    &__address {
-      display: flex;
-    }
+    display: flex;
 
     &__item {
       &:not(:last-child) {
@@ -138,12 +136,7 @@
   }
 
   .contacts {
-    &__address {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 18px;
-    }
-
+    margin-bottom: 18px;
     &__item {
       &:not(:last-child) {
         margin-bottom: 18px;
