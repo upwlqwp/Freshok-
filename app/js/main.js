@@ -34,3 +34,19 @@ var config = {
 
 var mixer1 = mixitup(containerEl1, config);
 var mixer2 = mixitup(containerEl2, config);
+
+
+const rangeSlider = document.getElementById('range-slider');
+
+if (rangeSlider) {
+  noUiSlider.create(rangeSlider, {
+    start: [100, 1000],
+    connect: true,
+    step: 1,
+    range: {
+        'min': [100],
+        'max': [1000]
+    }
+});
+
+}
