@@ -14,13 +14,17 @@
     line-height: 1;
     padding: 3px 6px;
     border-radius: 6px;
+    display: flex;
+    flex-direction: column;
     width: fit-content;
 
     &--new {
+      
       background-color: $green-900;
     }
 
     &--sale {
+   
       background-color: $red-900;
     }
 

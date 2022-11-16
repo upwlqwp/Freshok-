@@ -62,12 +62,15 @@ body {
   }
 }
 
+
+
 .title {
   text-align: center;
   @extend %rudasemibold-600;
   font-size: 32px;
   color: $dark-900;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .link-animation {

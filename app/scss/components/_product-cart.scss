@@ -45,6 +45,7 @@
     }
   
     &__arrow {
+      text-align: center;
       width: 60px;
       height: 60px;
       background-color: rgba(255, 255, 255, 0.8);
@@ -98,6 +99,7 @@
       }
   
       &.slick-disabled {
+        box-shadow: none;
         svg {
           fill: $silver-600;
         }
@@ -179,7 +181,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 57px 0 18px;
+    padding: 57px 12px 18px;
     height: 100%;
     max-width: 300px;
     background-color: $white;
@@ -194,18 +196,16 @@
     &__subtitle {
       display: block;
       margin-bottom: 9px;
-      padding: 0 18px;
       font-weight: 600;
       color: $dark-500;
       font-size: 14px;
-      @include line-clamp(2);
+      @include line-clamp(3);
       line-height: 1.4;
       letter-spacing: 0.03em;
     }
   
     &__price {
       color: $dark-500;
-      margin-left: 18px;
       position: relative;
       &--sale {
         top: -5px;
@@ -238,7 +238,6 @@
     &__cart {
       width: 32px;
       height: 32px;
-      padding: 8px;
       margin-right: 18px;
       border-radius: 3px;
   

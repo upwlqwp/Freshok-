@@ -1,4 +1,5 @@
 $(function () {
+
   $(".hero-slider__inner").slick({
     infinite: false,
     prevArrow:
