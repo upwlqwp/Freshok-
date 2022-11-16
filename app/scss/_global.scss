@@ -62,8 +62,6 @@ body {
   }
 }
 
-
-
 .title {
   text-align: center;
   @extend %rudasemibold-600;
@@ -85,5 +83,44 @@ body {
 
   &:active {
     color: $green-200;
+  }
+}
+
+.filter {
+  &__wrapper {
+    padding: 18px;
+    border-bottom: 1px solid #c1c1c1;
+  }
+
+  &__inner {
+    padding: 22px 18px 18px;
+  }
+
+  &__title {
+    display: block;
+    font-size: 24px;
+    line-height: 1.2;
+    color: $dark-900;
+    @extend %rudaregular-400;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      transform: rotate(-90deg);
+      padding: 9px;
+      background-position: right;
+      background-size: 10px 18px;
+      background-repeat: no-repeat;
+      background-image: url("../images/icons/arrow.svg");
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #505050;
   }
 }

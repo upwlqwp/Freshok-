@@ -1,5 +1,29 @@
 $(function () {
 
+  $(".price__filter").ionRangeSlider({
+    type: "double",
+    min: 100,
+    max: 1000,
+    from: 100,
+    to: 1000,
+    from: 550,
+    prefix: "₽",
+
+    onStart: function (data) {
+      $('.price__from').text(data.from);
+      $('.price__to').text(data.to);
+    },
+
+    onChange: function (data) {
+    
+      $('.price__from').text(data.from);
+      $('.price__to').text(data.to);
+  },
+
+  });
+
+  $('.select-styles').styler();
+
   $(".hero-slider__inner").slick({
     infinite: false,
     prevArrow:
@@ -36,17 +60,3 @@ var mixer1 = mixitup(containerEl1, config);
 var mixer2 = mixitup(containerEl2, config);
 
 
-const rangeSlider = document.getElementById('range-slider');
-
-if (rangeSlider) {
-  noUiSlider.create(rangeSlider, {
-    start: [100, 1000],
-    connect: true,
-    step: 1,
-    range: {
-        'min': [100],
-        'max': [1000]
-    }
-});
-
-}
