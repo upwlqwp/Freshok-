@@ -449,40 +449,64 @@ justify-content: center;
     }
   }
 
-  &__selects{
+  &__form{
     display: flex;
+    justify-content: space-between;
   }
 
   &__name,
   &__list{
+  appearance: none;
 
-   border: 1px solid #C1C1C1;
-    border-radius: 3px;
+  }
+  .jq-selectbox__select {
+    margin:0 24px;
+    max-width: 149px;
     
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #F6F6F6;
     color: #505050;
-    margin-right: 15px;
-
+  
+    &:hover{
+      background: transparent;
+    }
   }
-
-}
-
-
- .jq-selectbox__select {
-  z-index: 9;
-  border: 1px solid #C1C1C1;
-  border-radius: 3px;
-  padding: 15px;
-  color: #505050;
-  margin-right: 15px;
-  background-color: #63A60E;
-
-  &:hover{
-    background-color: transparent;
+  
+  .jq-selectbox__trigger{
+    border-left: none;
+  }
+ 
+  .jq-selectbox__trigger-arrow{
+    position: absolute;
+    right: 12px;
+    border: none;
+    height: 10px;
+    width: 6px;
+    background-repeat: no-repeat;
+    background-image: url('../images/icons/arrow.svg');
   }
 }
-.jq-selectbox__trigger{
-  border-left: none;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   .irs-max,

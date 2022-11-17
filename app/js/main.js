@@ -22,7 +22,9 @@ $(function () {
 
   });
 
-  $('.select-styles').styler();
+  $('.top-content__name').styler();
+
+  $('.top-content__list').styler();
 
   $(".hero-slider__inner").slick({
     infinite: false,
