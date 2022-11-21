@@ -442,17 +442,19 @@ justify-content: flex-end;
     transition: fill 0.4s;
     outline: none;
 
+    svg {
+      fill: #c1c1c1;
+      height: 35px;
+      width: 35px;
+    }
+
     &.top-content__btn--active {
         svg {
             fill: #60a00d;
         }
     }
     
-    svg {
-      fill: #c1c1c1;
-      height: 35px;
-      width: 35px;
-    }
+  
   
   }
 
