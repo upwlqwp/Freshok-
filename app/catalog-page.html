@@ -15,7 +15,6 @@
   <title>ФрешОк онлайн-маркет</title>
 </head>
 
-
 <body>
   <header class="header">
     <div class="header__top">
@@ -69,7 +68,7 @@
               Каталог продуктов
             </button>
 
-            <div class="catalog__content" data-target="one" aria-labelledby="dropdownMenuButton">
+            <div class="catalog__content" data-target="one" >
               <ul class="catalog__list">
                 <li class="catalog__item">
                   <a class="catalog__link" href="#"> tea</a>
@@ -91,24 +90,8 @@
                 </li>
               </ul>
             </div>
+
           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
           <form class="search-form" action="#">
             <label class="sr-only" for="form-search">
@@ -166,285 +149,664 @@
       </div>
     </section>
 
-
-
-
-
-
-
     <section class="catalog-page">
       <div class="container">
-          <h1 class="catalog-page__title">Каталог товаров</h1>
-          <div class="catalog-page__inner">
+        <h1 class="catalog-page__title">Каталог товаров</h1>
+        <div class="catalog-page__inner">
 
-              <ul class="catalog-page__list filter"> 
-             
+          <ul class="catalog-page__list filter">
+            <li class="catalog-page__item">
+              <article class="categories">
+                <div class="filter__wrapper">
+                  <span class="filter__title"> Категории</span>
+                </div>
+                <div class="filter__inner">
 
-                  <li class="catalog-page__item">
-                      <article class="categories">
-                          <div class="filter__wrapper">
-                          
-                              <span class="filter__title"> Категории</span>
-                        
-                          </div>
-                          <div class="filter__inner">
-          
-                              <ul class="categories__list">
-                                  <li class="categories__item">
-                                      <a class="categories__link  filter__text" href="#">Овощи и фрукты</a>
-                                     
-                                  </li>
-                                  <li class="categories__item">
-                                      <a class="categories__link filter__text" href="#">Бакалея</a>
-                                  </li>
-                                  <li class="categories__item">
-                                      <a class="categories__link filter__text" href="#">Молочные продукты</a>
-                                  </li>
-                                  <li class="categories__item">
-                                      <a class="categories__link filter__text" href="#">Хлеб</a>
-                                  </li>
-                                  <li class="categories__item">
-                                      <a class="categories__link filter__text" href="#">Мясо</a>
-                                  </li>
-                                  <li class="categories__item">
-                                      <a class="categories__link filter__text" href="#">Колбаса</a>
-                                  </li>
-                                  <li class="categories__item">
-                                      <a class="categories__link filter__text" href="#">Рыба</a>
-                                  </li>
-                                  <li class="categories__item">
-                                      <a class="categories__link filter__text" href="#">Алкоголь</a>
-                                  </li>
-                                  <li class="categories__item">
-                                      <a class="categories__link filter__text" href="#">Овощи и фрукты</a>
-                                  </li>
-                              </ul>
-                          </div>
-                      </article>
+                  <ul class="categories__list">
+                    <li class="categories__item">
+                      <a class="categories__link  filter__text" href="#">Овощи и фрукты</a>
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__link filter__text" href="#">Бакалея</a>
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__link filter__text" href="#">Молочные продукты</a>
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__link filter__text" href="#">Хлеб</a>
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__link filter__text" href="#">Мясо</a>
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__link filter__text" href="#">Колбаса</a>
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__link filter__text" href="#">Рыба</a>
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__link filter__text" href="#">Алкоголь</a>
+                    </li>
+                    <li class="categories__item">
+                      <a class="categories__link filter__text" href="#">Овощи и фрукты</a>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </li>
 
-                  </li>
+            <li class="catalog-page__item">
+              <article class="offer">
+                <div class="filter__wrapper">
+                  <span class="filter__title"> Предложения</span>
+                </div>
+                <div class="filter__inner">
+                  <form class="offer__form" action="#">
+                    <label class="offer__label">
+                      <input class="offer__input" type="checkbox">
+                      <span class="offer__checkbox"></span>
+                      <span class="filter__text">Со скидкой</span>
+                    </label>
+                    <label class="offer__label">
+                      <input class="offer__input" type="checkbox">
+                      <span class="offer__checkbox"></span>
+                      <span class="filter__text">Новинка</span>
+                    </label>
+                    <label class="offer__label">
+                      <input class="offer__input" type="checkbox">
+                      <span class="offer__checkbox"></span>
+                      <span class="filter__text">Хит</span>
+                    </label>
+                  </form>
+                </div>
+              </article>
+            </li>
 
-                  <li class="catalog-page__item">
-                      <article class="offer">
-                          <div class="filter__wrapper">
-                              <span class="filter__title"> Предложения</span>
-                          </div>
-                          <div class="filter__inner">
-                              <form class="offer__form" action="#">
-                                  <label class="offer__label">
-                                      <input class="offer__input" type="checkbox">
-                                      <span class="offer__checkbox"></span>
-                                      <span class="filter__text">Со скидкой</span>
-                                  </label>
-                                  <label class="offer__label">
-                                      <input class="offer__input" type="checkbox">
-                                      <span class="offer__checkbox"></span>
-                                      <span class="filter__text">Новинка</span>
-                                  </label>
-                                  <label class="offer__label">
-                                      <input class="offer__input" type="checkbox">
-                                      <span class="offer__checkbox"></span>
-                                      <span class="filter__text">Хит</span>
-                                  </label>
+            <li class="catalog-page__item">
+              <article class="offer">
+                <div class="filter__wrapper">
+                  <span class="filter__title"> Бренд</span>
+                </div>
+                <div class="filter__inner">
 
-                              </form>
+                  <form class="offer__form" action="#">
+                    <label class="offer__label">
+                      <input class="offer__input" type="checkbox">
+                      <span class="offer__checkbox"></span>
+                      <span class="filter__text">Coca Cola</span>
+                    </label>
+                    <label class="offer__label">
+                      <input class="offer__input" type="checkbox">
+                      <span class="offer__checkbox"></span>
+                      <span class="filter__text">Pepsi</span>
+                    </label>
+                    <label class="offer__label">
+                      <input class="offer__input" type="checkbox">
+                      <span class="offer__checkbox"></span>
+                      <span class="filter__text">Sprite</span>
+                    </label>
 
+                    <label class="offer__label">
+                      <input class="offer__input" type="checkbox">
+                      <span class="offer__checkbox"></span>
+                      <span class="filter__text">Fanta</span>
+                    </label>
+                    <label class="offer__label">
+                      <input class="offer__input" type="checkbox">
+                      <span class="offer__checkbox"></span>
+                      <span class="filter__text">RedBull</span>
+                    </label>
+                    <label class="offer__label">
+                      <input class="offer__input" type="checkbox">
+                      <span class="offer__checkbox"></span>
+                      <span class="filter__text">Dr Pepper</span>
+                    </label>
+                  </form>
 
-                          </div>
-                      </article>
-
-
-
-                  </li>
-
-                  <li class="catalog-page__item">
-                      <article class="offer">
-                          <div class="filter__wrapper">
-                              <span class="filter__title"> Бренд</span>
-                          </div>
-                          <div class="filter__inner">
-
-                              <form class="offer__form" action="#">
-                                  <label class="offer__label">
-                                      <input class="offer__input" type="checkbox">
-                                      <span class="offer__checkbox"></span>
-                                      <span class="filter__text">Coca Cola</span>
-                                  </label>
-                                  <label class="offer__label">
-                                      <input class="offer__input" type="checkbox">
-                                      <span class="offer__checkbox"></span>
-                                      <span class="filter__text">Pepsi</span>
-                                  </label>
-                                  <label class="offer__label">
-                                      <input class="offer__input" type="checkbox">
-                                      <span class="offer__checkbox"></span>
-                                      <span class="filter__text">Sprite</span>
-                                  </label>
-
-                                  <label class="offer__label">
-                                      <input class="offer__input" type="checkbox">
-                                      <span class="offer__checkbox"></span>
-                                      <span class="filter__text">Fanta</span>
-                                  </label>
-                                  <label class="offer__label">
-                                      <input class="offer__input" type="checkbox">
-                                      <span class="offer__checkbox"></span>
-                                      <span class="filter__text">RedBull</span>
-                                  </label>
-                                  <label class="offer__label">
-                                      <input class="offer__input" type="checkbox">
-                                      <span class="offer__checkbox"></span>
-                                      <span class="filter__text">Dr Pepper</span>
-                                  </label>
-                              </form>
-
-                          </div>
-                      </article>
+                </div>
+              </article>
 
 
 
-                  </li>
+            </li>
 
-                  <li class="catalog-page__item">
-                      <article class="price">
-                          <div class="filter__wrapper">
-                              <span class="filter__title"> Цена</span>
-                          </div>
+            <li class="catalog-page__item">
+              <article class="price">
+                <div class="filter__wrapper">
+                  <span class="filter__title"> Цена</span>
+                </div>
 
-                          <div class="filter__inner">
+                <div class="filter__inner">
 
-                              <form action="#">
-                                  <label class="price__label ">
-                                      <span class="price__text ">от</span>
-                                      <span class="price__from"  >100</span>
-                                      <span class="price__currency">&#8381</span>
-                                      <span class="price__text">до</span>
-                                      <span class="price__to" >1000</span>
-                                      <span class="price__currency">&#8381</span>
-
-
-                                  </label>
-                                  <input class="price__filter" type="number" data-min="100" data-max="1000"
-                                      >
-
-                              </form>
-
-                          </div>
-
-                      </article>
+                  <form action="#">
+                    <label class="price__label ">
+                      <span class="price__text ">от</span>
+                      <span class="price__from">100</span>
+                      <span class="price__currency">&#8381</span>
+                      <span class="price__text">до</span>
+                      <span class="price__to">1000</span>
+                      <span class="price__currency">&#8381</span>
 
 
+                    </label>
+                    <input class="price__filter" type="number" data-min="100" data-max="1000">
 
-                  </li>
+                  </form>
 
+                </div>
+
+              </article>
+            </li>
+          </ul>
+
+          <div class="catalog-page__content">
+
+
+            <div class="top-content">
+              <div class="top-content__form">
+                <select class="top-content__sort select-style">
+                  <option value="">По названию</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                </select>
+                <select class="top-content__show select-style">
+                  <option value="">по 12</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                </select>
+              </div>
+              <div class="top-content__buttons">
+                <button class="top-content__btn top-content__btn--active btn-grid" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#btn-grid"></use>
+                  </svg>
+                </button>
+                <button class="top-content__btn btn-list" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#btn-list"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="catalog-page__wrapper">
+              <ul class="top-products__list catalog__products-grid ">
+                <li class="top-products__item   mix category-a">
+                  <article class="product">
+                    <div class="badges">
+                      <span class="badges__item badges__item--new">Новинка</span>
+                      <span class="badges__item badges__item--sale">-50%</span>
+                    </div>
+                    <button class="product__favorites" type="button">
+                      <span class="sr-only"> Добавить в избранное</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <a class="product__link" href="#">
+                      <img class="product__img" src="images/product-cart/lifeline.png"
+                        alt="Напиток LIFELINE Intellectual со вкусом арбуза и яблока" width="219" height="218" />
+                    </a>
+                    <h3 class="product__subtitle">Напиток LIFELINE Intellectual со вкусом арбуза и яблока Фонте Аква 0.5
+                      л
+                    </h3>
+                    <div class="product__inner">
+                      <div class="info-badge">
+                        <span class="info-badge__item info-badge__item--available">
+                          в наличии</span>
+                      </div>
+                      <span class="promotions__reviews"> 3.5 </span>
+                    </div>
+                    <div class="product__wrapper">
+                      <span class="product__price product__price--sale">79 <span>&#8372;</span></span>
+                      <span class="product__price">39 <span>&#8372;</span></span>
+                      <button class="product__cart btn-green" type="button">
+                        <span class="sr-only"> Добавит в корзину</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
+                <li class="top-products__item  mix category-a">
+                  <article class="product">
+                    <button class="product__favorites" type="button">
+                      <span class="sr-only"> Добавить в избранное</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <a class="product__link" href="#">
+                      <img class="product__img" src="images/product-cart/lemon.png" alt="Лимон" width="219"
+                        height="218" />
+                    </a>
+                    <h3 class="product__subtitle">Лимон, 1кг</h3>
+                    <div class="product__inner">
+                      <div class="info-badge">
+                        <span class="info-badge__item info-badge__item--available">
+                          в наличии</span>
+                      </div>
+                      <span class="promotions__reviews"> 4.5 </span>
+                    </div>
+                    <div class="product__wrapper">
+                      <span class="product__price">49 <span>&#8372;</span></span>
+                      <button class="product__cart btn-green" type="button">
+                        <span class="sr-only"> Добавит в корзину</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
+                <li class="top-products__item mix category-a">
+                  <article class="product">
+                    <div class="badges">
+                      <span class="badges__item badges__item--hit">Хит</span>
+                    </div>
+                    <button class="product__favorites" type="button">
+                      <span class="sr-only"> Добавить в избранное</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <a class="product__link" href="#">
+                      <img class="product__img" src="images/product-cart/dragon-fruti.png" alt="Питахайя красная"
+                        width="219" height="218" />
+                    </a>
+                    <h3 class="product__subtitle">
+                      Питахайя красная с белой мякотью, 1шт
+                    </h3>
+                    <div class="product__inner">
+                      <div class="info-badge">
+                        <span class="info-badge__item info-badge__item--available">
+                          в наличии</span>
+                      </div>
+                      <span class="promotions__reviews"> 4.5 </span>
+                    </div>
+                    <div class="product__wrapper">
+                      <span class="product__price"> 101<span>&#8372;</span></span>
+                      <button class="product__cart btn-green" type="button">
+                        <span class="sr-only"> Добавить в корзину</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
+                <li class="top-products__item mix category-c">
+                  <article class="product">
+                    <div class="badges">
+                      <span class="badges__item badges__item--hit">Хит</span>
+                    </div>
+                    <button class="product__favorites" type="button">
+                      <span class="sr-only"> Добавить в избранное</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <a class="product__link" href="#">
+                      <img class="product__img" src="images/product-cart/carrot.png" alt="Морковь молодая" width="219"
+                        height="218" />
+                    </a>
+                    <h3 class="product__subtitle">
+                      Морковь молодая с бабушкиной грядки, 1кг
+                    </h3>
+                    <div class="product__inner">
+                      <div class="info-badge">
+                        <span class="info-badge__item info-badge__item--unavailable">Нет в наличии</span>
+                      </div>
+                      <span class="promotions__reviews"> 4.5 </span>
+                    </div>
+                    <div class="product__wrapper">
+                      <span class="product__price">19 <span>&#8372;</span></span>
+                      <button class="product__cart btn-green" type="button">
+                        <span class="sr-only"> Добавить в корзину</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
+                <li class="top-products__item mix category-d">
+                  <article class="product">
+                    <div class="badges">
+                      <span class="badges__item badges__item--sale">-30%</span>
+                    </div>
+                    <button class="product__favorites" type="button">
+                      <span class="sr-only"> Добавить в избранное</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <a class="product__link" href="#">
+                      <img class="product__img" src="images/product-cart/juice.png" alt="Напиток сокосодержащий"
+                        width="219" height="218" />
+                    </a>
+                    <h3 class="product__subtitle">
+                      Напиток сокосодержащий Sanpellegrino Aranciata Orange
+                      Красный апельсин безалкогольн...
+                    </h3>
+                    <div class="product__inner">
+                      <div class="info-badge">
+                        <span class="info-badge__item info-badge__item--available">
+                          в наличии</span>
+                      </div>
+                      <span class="promotions__reviews"> 4.5 </span>
+                    </div>
+                    <div class="product__wrapper">
+                      <span class="product__price product__price--sale">49 <span>&#8372;</span></span>
+                      <span class="product__price">29 <span>&#8372;</span></span>
+                      <button class="product__cart btn-green" type="button">
+                        <span class="sr-only"> Добавить в корзину</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
+                <li class="top-products__item mix category-c">
+                  <article class="product">
+                    <div class="badges">
+                      <span class="badges__item badges__item--new">Новинка</span>
+                    </div>
+                    <button class="product__favorites" type="button">
+                      <span class="sr-only"> Добавить в избранное</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <a class="product__link" href="#">
+                      <img class="product__img" src="images/product-cart/coffee.png" alt="Кофе" width="219"
+                        height="218" />
+                    </a>
+                    <h3 class="product__subtitle">
+                      Кофе с коноплей органический Caffé Salomoni 250г
+                    </h3>
+                    <div class="product__inner">
+                      <div class="info-badge">
+                        <span class="info-badge__item info-badge__item--end">заканчивается</span>
+                      </div>
+                      <span class="promotions__reviews"> 4.5 </span>
+                    </div>
+                    <div class="product__wrapper">
+                      <span class="product__price">219 <span>&#8372;</span></span>
+                      <button class="product__cart btn-green" type="button">
+                        <span class="sr-only"> Добавить в корзину</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
+                <li class="top-products__item mix category-b">
+                  <article class="product">
+                    <div class="badges">
+                      <span class="badges__item badges__item--new">Новинка</span>
+                    </div>
+                    <button class="product__favorites" type="button">
+                      <span class="sr-only"> Добавить в избранное</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <a class="product__link" href="#">
+                      <img class="product__img" src="images/product-cart/peper.png" alt="Перец оранжевый" width="219"
+                        height="218" />
+                    </a>
+                    <h3 class="product__subtitle">Перец оранжевый, 1кг</h3>
+                    <div class="product__inner">
+                      <div class="info-badge">
+                        <span class="info-badge__item info-badge__item--end">заканчивается</span>
+                      </div>
+                      <span class="promotions__reviews"> 4.5 </span>
+                    </div>
+                    <div class="product__wrapper">
+                      <span class="product__price">100 <span>&#8372;</span></span>
+                      <button class="product__cart btn-green" type="button">
+                        <span class="sr-only"> Добавить в корзину</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
+                <li class="top-products__item mix category-b">
+                  <article class="product">
+                    <button class="product__favorites" type="button">
+                      <span class="sr-only"> Добавить в избранное</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <a class="product__link" href="#">
+                      <img class="product__img" src="images/product-cart/ketchup.png" alt="Кетчуп томатный" width="219"
+                        height="218" />
+                    </a>
+                    <h3 class="product__subtitle">
+                      Кетчуп томатный детский органический Bio-Zentrale 500мл, 1
+                      шт
+                    </h3>
+                    <div class="product__inner">
+                      <div class="info-badge">
+                        <span class="info-badge__item info-badge__item--available">
+                          в наличии</span>
+                      </div>
+                      <span class="promotions__reviews"> 4.5 </span>
+                    </div>
+                    <div class="product__wrapper">
+                      <span class="product__price">60 <span>&#8372;</span></span>
+                      <button class="product__cart btn-green" type="button">
+                        <span class="sr-only"> Добавить в корзину</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
+                <li class="top-products__item mix category-a">
+                  <article class="product">
+                    <div class="badges">
+                      <span class="badges__item badges__item--new">Новинка</span>
+                      <span class="badges__item badges__item--sale">-50%</span>
+                    </div>
+                    <button class="product__favorites" type="button">
+                      <span class="sr-only"> Добавить в избранное</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <a class="product__link" href="#">
+                      <img class="product__img" src="images/product-cart/pineapple.png" alt="Ананас" width="219"
+                        height="218" />
+                    </a>
+                    <h3 class="product__subtitle">Ананас, 1кг</h3>
+                    <div class="product__inner">
+                      <div class="info-badge">
+                        <span class="info-badge__item info-badge__item--available">
+                          в наличии</span>
+                      </div>
+                      <span class="promotions__reviews"> 4.5 </span>
+                    </div>
+                    <div class="product__wrapper">
+                      <span class="product__price product__price--sale">199 <span>&#8372;</span></span>
+                      <span class="product__price">99 <span>&#8372;</span></span>
+                      <button class="product__cart btn-green" type="button">
+                        <span class="sr-only"> Добавит в корзину</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
+                <li class="top-products__item mix category-c">
+                  <article class="product">
+                    <div class="badges">
+                      <span class="badges__item badges__item--hit">Хит</span>
+                    </div>
+                    <button class="product__favorites" type="button">
+                      <span class="sr-only"> Добавить в избранное</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <a class="product__link" href="#">
+                      <img class="product__img" src="images/product-cart/carrot.png" alt="Морковь молодая" width="219"
+                        height="218" />
+                    </a>
+                    <h3 class="product__subtitle">
+                      Морковь молодая с бабушкиной грядки, 1кг
+                    </h3>
+                    <div class="product__inner">
+                      <div class="info-badge">
+                        <span class="info-badge__item info-badge__item--end">заканчивается</span>
+                      </div>
+                      <span class="promotions__reviews"> 4.5 </span>
+                    </div>
+                    <div class="product__wrapper">
+                      <span class="product__price">19 <span>&#8372;</span></span>
+                      <button class="product__cart btn-green" type="button">
+                        <span class="sr-only"> Добавить в корзину</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
+                <li class="top-products__item mix category-d">
+                  <article class="product">
+                    <div class="badges">
+                      <span class="badges__item badges__item--sale">-30%</span>
+                    </div>
+                    <button class="product__favorites" type="button">
+                      <span class="sr-only"> Добавить в избранное</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <a class="product__link" href="#">
+                      <img class="product__img" src="images/product-cart/juice.png" alt="Напиток сокосодержащий"
+                        width="219" height="218" />
+                    </a>
+                    <h3 class="product__subtitle">
+                      Напиток сокосодержащий Sanpellegrino Aranciata Orange
+                      Красный апельсин безалкогольн...
+                    </h3>
+                    <div class="product__inner">
+                      <div class="info-badge">
+                        <span class="info-badge__item info-badge__item--available">
+                          в наличии</span>
+                      </div>
+                      <span class="promotions__reviews"> 4.5 </span>
+                    </div>
+                    <div class="product__wrapper">
+                      <span class="product__price product__price--sale">49 <span>&#8372;</span></span>
+                      <span class="product__price">29 <span>&#8372;</span></span>
+                      <button class="product__cart btn-green" type="button">
+                        <span class="sr-only"> Добавить в корзину</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
+                <li class="top-products__item mix category-c">
+                  <article class="product">
+                    <div class="badges">
+                      <span class="badges__item badges__item--new">Новинка</span>
+                    </div>
+                    <button class="product__favorites" type="button">
+                      <span class="sr-only"> Добавить в избранное</span>
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                    </button>
+                    <a class="product__link" href="#">
+                      <img class="product__img" src="images/product-cart/coffee.png" alt="Кофе" width="219"
+                        height="218" />
+                    </a>
+                    <h3 class="product__subtitle">
+                      Кофе с коноплей органический Caffé Salomoni 250г
+                    </h3>
+                    <div class="product__inner">
+                      <div class="info-badge">
+                        <span class="info-badge__item info-badge__item--end">заканчивается</span>
+                      </div>
+                      <span class="promotions__reviews"> 4.5 </span>
+                    </div>
+                    <div class="product__wrapper">
+                      <span class="product__price">219 <span>&#8372;</span></span>
+                      <button class="product__cart btn-green" type="button">
+                        <span class="sr-only"> Добавить в корзину</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#cart"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </article>
+                </li>
               </ul>
 
 
 
-              <div class="catalog-page__content">
+
+              <div class="pagination">
+
+                <button class="promotions__btn btn-green pagination__btn" type="button">
+                  Показать еще
+                </button>
 
 
-                  <div class="top-content">
+                <ul class="pagination__list">
+                  <li class="pagination__item">
+                    <a class="pagination__prev pagination-arrow" href="#"></a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">1</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">2</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">...</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">9</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#">10</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__next pagination-arrow" href="#"></a>
+                  </li>
+                </ul>
 
-                      
 
-                    
-
-                      <div class="top-content__form">
-                        <select class="top-content__sort select-style">
-                          <option value="">По названию</option>
-                          <option value="">2</option>
-                          <option value="">3</option>
-                          <option value="">4</option>
-                        </select>
-                        <select class="top-content__show select-style">
-                          <option value="">по 12</option>
-                          <option value="">2</option>
-                          <option value="">3</option>
-                          <option value="">4</option>
-                        </select>
-                      </div>
-
-                   
-
-                       
-
-                      <div class="top-content__buttons">
-                          <button class="top-content__btn top-content__btn--active btn-grid" type="button">
-                              <svg>
-                                  <use xlink:href="images/sprite.svg#btn-grid"></use>
-                              </svg>
-                          </button>
-                          <button class="top-content__btn btn-list " type="button">
-                              <svg>
-                                  <use xlink:href="images/sprite.svg#btn-list"></use>
-                              </svg>
-                          </button>
-                      </div>
-                  </div>
-
-                  <ul class="top-products__list">
-                    <li class="top-products__item mix category-a">
-                      <article class="product">
-                        <button class="product__favorites" type="button">
-                          <span class="sr-only"> Добавить в избранное</span>
-                          <svg>
-                            <use xlink:href="images/sprite.svg#favorite"></use>
-                          </svg>
-                        </button>
-                        <a class="product__link" href="#">
-                          <img class="product__img" src="images/product-cart/lemon.png" alt="Лимон" width="219" height="218" />
-                        </a>
-                        <h3 class="product__subtitle">Лимон, 1кг</h3>
-                        <div class="product__wrapper">
-                          <span class="product__price">49 <span>&#8372;</span></span>
-                          <button class="product__cart btn-green" type="button">
-                            <span class="sr-only"> Добавит в корзину</span>
-                            <svg>
-                              <use xlink:href="images/sprite.svg#cart"></use>
-                            </svg>
-                          </button>
-                        </div>
-                      </article>
-                    </li>
-
-                    <li class="top-products__item mix category-a">
-                      <article class="product">
-                        <div class="badges">
-                          <span class="badges__item badges__item--new">Новинка</span>
-                          <span class="badges__item badges__item--sale">-50%</span>
-                        </div>
-                        <button class="product__favorites" type="button">
-                          <span class="sr-only"> Добавить в избранное</span>
-                          <svg>
-                            <use xlink:href="images/sprite.svg#favorite"></use>
-                          </svg>
-                        </button>
-                        <a class="product__link" href="#">
-                          <img class="product__img" src="images/product-cart/pineapple.png" alt="Ананас" width="219"
-                            height="218" />
-                        </a>
-                        <h3 class="product__subtitle">Ананас, 1кг</h3>
-                        <div class="product__wrapper">
-                          <span class="product__price product__price--sale">199 <span>&#8372;</span></span>
-                          <span class="product__price">99 <span>&#8372;</span></span>
-                          <button class="product__cart btn-green" type="button">
-                            <span class="sr-only"> Добавит в корзину</span>
-                            <svg>
-                              <use xlink:href="images/sprite.svg#cart"></use>
-                            </svg>
-                          </button>
-                        </div>
-                      </article>
-                    </li>
-                  </ul>
-                     
-                    
               </div>
+
+
+            </div>
+
+
+
+
           </div>
+        </div>
       </div>
 
-  </section>
+    </section>
 
 
     <section class="advantages">

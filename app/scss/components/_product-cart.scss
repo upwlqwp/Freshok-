@@ -144,8 +144,6 @@
   }
   
   .top-products {
-
-
     &__list {
       margin-bottom: 48px;
       display: grid;
@@ -193,6 +191,7 @@
 
     &.product--list{
       max-width: 100%;
+      
     }
   
     &:hover {
@@ -239,6 +238,12 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
+    }
+
+    &__inner{
+      display: flex;
+      justify-content: space-between;
+     margin-bottom: 9px;
     }
   
     &__cart {
